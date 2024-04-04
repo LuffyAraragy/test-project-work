@@ -1,26 +1,30 @@
 <template>
-  <img alt="Vue logo" src="./assets/logo.png">
-  <HelloWorld msg="Welcome to Your Vue.js App"/>
+  <div class="app" id="app">
+    <PageHome/>
+  </div>
 </template>
 
 <script>
-import HelloWorld from './components/HelloWorld.vue'
+import PageHome from './pages/PageHome.vue';
 
 export default {
   name: 'App',
   components: {
-    HelloWorld
+    PageHome,
   }
 }
 </script>
 
 <style>
-#app {
-  font-family: Avenir, Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
-  margin-top: 60px;
+* {
+  margin: 0;
+  padding: 0;
 }
+
+.container {
+  margin: 0 auto;
+  max-width: 1160px;
+  padding: 0 20px;
+}
+
 </style>
