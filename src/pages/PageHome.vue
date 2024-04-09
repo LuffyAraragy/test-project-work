@@ -1,9 +1,9 @@
 <template>
   <div class="page-home">
     <AppHeader> </AppHeader>
-    <AppTitleInformation> </AppTitleInformation>
-    <AppComponent> </AppComponent>
-    <AppComponent> </AppComponent>
+    <AppTitleInformation :hasButton="true" :hasLeft="true" :hasAppTitleInfoButton="true"> </AppTitleInformation>
+    <AppComponent :hasColumn="true"> </AppComponent>
+    <AppComponent :hasRow="true"> </AppComponent>
     <AppContentBankCard> </AppContentBankCard>
     <AppFormMessage> </AppFormMessage>
     <AppFooter> </AppFooter>
@@ -13,7 +13,7 @@
 <script>
 import AppHeader from "@/components/AppHeader.vue";
 import AppFooter from "@/components/AppFooter.vue";
-import AppTitleInformation from "@/components/AppTitleInformation.vue";
+import AppTitleInformation from "@/components/component-templates/AppTitleInformation.vue";
 import AppComponent from '@/components/component-templates/AppComponent.vue';
 import AppContentBankCard from '@/components/AppContentBankCard.vue';
 import AppFormMessage from '@/components/AppFormMessage.vue';
